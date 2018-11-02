@@ -1,0 +1,35 @@
+{
+  "name": "genarate-ts-by-swagger",
+  "version": "1.0.0",
+  "description": "genarate api req&res type for typescript by swagger api docs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "tsc && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimittqq/genarate-ts-by-swagger.git"
+  },
+  "keywords": [
+    "swagger",
+    "typescript",
+    "api"
+  ],
+  "author": "mimittqq <332990332@qq.com> (https://github.com/mimittqq)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mimittqq/genarate-ts-by-swagger/issues"
+  },
+  "homepage": "https://github.com/mimittqq/genarate-ts-by-swagger#readme",
+  "dependencies": {
+    "@types/node": "^10.12.1",
+    "fs-extra": "^7.0.0",
+    "js-beautify": "^1.8.8",
+    "memoizee": "^0.4.14",
+    "swagger-client": "^3.8.21",
+    "swagger-tools": "^0.10.4",
+    "typescript": "^3.1.5",
+    "url": "^0.11.0"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+npm-debug.log
+.history/
+.vscode/
+.DS_Store
+yarn-error.log
+test/
