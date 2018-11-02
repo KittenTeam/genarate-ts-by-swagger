@@ -1,0 +1,1 @@
+通过 swagger 自动生成 typescript 中使用的 type
