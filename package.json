@@ -1,5 +1,5 @@
 {
-  "name": "genarate-ts-by-swagger",
+  "name": "@kitten-team/genarate-ts-by-swagger",
   "version": "1.0.0",
   "description": "genarate api req&res type for typescript by swagger api docs",
   "main": "./dist/index.js",
