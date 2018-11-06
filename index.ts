@@ -1,4 +1,6 @@
-import { config } from './config';
+const cmd_arguments = process.argv.splice(2);
+const config = require(cmd_arguments[0]);
+
 const swaggerParserMock = require('./lib/index');
 const {
   isObject,
