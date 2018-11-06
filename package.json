@@ -2,7 +2,7 @@
   "name": "genarate-ts-by-swagger",
   "version": "1.0.0",
   "description": "genarate api req&res type for typescript by swagger api docs",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "npm run test",
     "start": "tsc && node ./dist/index.js"
