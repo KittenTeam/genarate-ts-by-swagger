@@ -1,6 +1,8 @@
 "use strict";
 var cmd_arguments = process.argv.splice(2);
-var config = require(cmd_arguments[0]);
+var path = require('path');
+var config_path = path.join(__dirname, '../../../../', cmd_arguments[0]);
+var config = require(config_path);
 var swaggerParserMock = require('./lib/index');
 var _a = require('./lib/utils'), isObject = _a.isObject, isArray = _a.isArray, normalizeArray = _a.normalizeArray;
 var primitives = require('./lib/primitives');
@@ -11,6 +13,7 @@ var beautify_opts = {
 };
 var config_arr = normalizeArray(config);
 config_arr.forEach(function (cfg) {
+    cfg.output = path.join(config_path, '../', cfg.output);
     swaggerParserMock(cfg.api).then(function (docs) {
         var file = "";
         cfg.paths.forEach(function (item) {
