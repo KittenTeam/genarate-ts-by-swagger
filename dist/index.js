@@ -1,8 +1,7 @@
 "use strict";
 var cmd_arguments = process.argv.splice(2);
 var path = require('path');
-// const config_path = path.join(__dirname, '../../../../', cmd_arguments[0]);
-var config_path = path.join(__dirname, '../', cmd_arguments[0]);
+var config_path = path.join(__dirname, '../../../../', cmd_arguments[0]);
 var config = require(config_path);
 var swaggerParserMock = require('./lib/index');
 var _a = require('./lib/utils'), isObject = _a.isObject, isArray = _a.isArray, normalizeArray = _a.normalizeArray;
@@ -58,7 +57,6 @@ config_arr.forEach(function (cfg) {
                         if (is_normal_value(isArray(status_schema) ? status_schema[0] : status_schema))
                             return;
                         if (isArray(status_schema)) {
-                            console.log(api);
                             status_schema = status_schema[0];
                             var type_name = genarate_name_from_api({
                                 path: prop,
