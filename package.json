@@ -1,11 +1,11 @@
 {
   "name": "@kitten-team/genarate-ts-by-swagger",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "genarate api req&res type for typescript by swagger api docs",
   "main": "./dist/index.js",
   "scripts": {
     "test": "npm run test",
-    "start": "tsc && node ./dist/index.js ./config.js"
+    "start": "tsc && node ./dist/index.js ./test/config.js"
   },
   "repository": {
     "type": "git",
